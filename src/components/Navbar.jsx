@@ -1,15 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-const NavBar = styled.header`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    height: 50px;
-    position: fixed;
-    width: 100vw;
-`
+import { NavBar } from '../GlobalStyles'
 
 
 export default function Navbar() {
