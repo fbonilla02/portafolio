@@ -10,6 +10,8 @@
 }
 html, body{
     font-family: var(--font-montserrat);
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
 }
 
 *{
@@ -64,8 +66,7 @@ img,h1, h2, h3, h4, h5, h6{
  */
 
 .imgfranc{
-    width: 250px;
-    display: none;
+    width: 300px;
 }
 
 .title{

@@ -9,7 +9,7 @@ export const NavBar = styled.header`
     height: 50px;
     position: fixed;
     width: 100vw;
-    color: var(${props => props.colorxd ? '--white-color' : '--black-color' });
+    color: var(${props => props.color ? '--white-color' : '--black-color' });
 `
 
 
