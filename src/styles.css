@@ -83,7 +83,7 @@ img,h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
-.articleProjects{
+/* .articleProjects{
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr;
@@ -95,7 +95,7 @@ img,h1, h2, h3, h4, h5, h6{
         border-right: solid 1px rgb(102, 51, 153, 0.5);
 
     }
-}
+} */
 .section-projects{
     display: flex;
     flex-direction: column;
