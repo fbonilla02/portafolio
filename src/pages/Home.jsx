@@ -1,33 +1,13 @@
 import React from 'react'
 
-import styled from 'styled-components'
 import AboutMe from '../components/AboutMe'
 import Button from '../components/Button'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import Tools from '../components/Tools'
-import { NavBar } from '../GlobalStyles'
-import shapes from './../assets/cross.svg'
+import { ArticleProjects, MainContainer, Snap } from '../GlobalStyles'
 
 
-const MainContainer = styled.main`
-  scroll-snap-type: y mandatory;
-  overflow: scroll;
-  height: 100vh;
-  background-color: var(--gray-color);
-`
-
-const Snap = styled.div`
-  height: 100vh;
-  scroll-snap-align: start;
-  display: grid;
-  grid-template-columns: ${props => props.notGrid ? '1fr' : '1fr 1fr'};
-  padding: 100px 80px;
-  align-items: ${props => props.notCenter ? 'normal' : 'center'} ;
-  justify-items: ${props => props.notCenter ? 'normal' : 'center'} ;
-  background-color: ${props => props.backcolor};
-  color: var(${props => props.primary ? '--black-color' : '--white-color'});
-`
 
 
 export default function Home() {
@@ -37,7 +17,7 @@ export default function Home() {
     <MainContainer>
     
        <Snap backcolor='#663399' >
-       <NavBar color='true'/>
+       
         <section >
           <h1 className='title'>Desarrollador <br/> Front end</h1>
           <p>Hola, soy desarrollador front-end con experiencia en React. Me dedico a crear aplicaciones web dinámicas y eficientes, utilizando la popular biblioteca de JavaScript React para construir interfaces de usuario interactivas y atractivas.</p>
@@ -55,7 +35,7 @@ export default function Home() {
        </Snap>
 
        <Snap primary notGrid>
-        <article className='articleProjects'>
+        <ArticleProjects>
           <section className='section-projects'>
             <h3>Proyectos</h3>
             <p>Me gusta practicar lo aprendido, crear proyectos y experimentar</p>
@@ -71,7 +51,7 @@ export default function Home() {
                 VER MIS DISEÑOS
             </Button>
           </section>
-        </article>
+        </ArticleProjects>
       </Snap>
 
       <Snap primary notGrid notCenter>

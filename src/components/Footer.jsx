@@ -30,6 +30,7 @@ const Container = styled.div`
     flex-direction: column;
     width: 100%;
     padding: 0px 50px;
+    background-color: var(${props => props.purpleColor ? '--purple-color':'--white-color'});
     
 `
 const FooterBotton = styled.ul`
@@ -46,8 +47,8 @@ const FooterBotton = styled.ul`
 
 export default function Footer() {
   return (
-    <Container>
-         <FooterContainer>
+    <Container purpleColor>
+         <FooterContainer >
          <h1>Francisco Bonilla C.</h1>
           <ul>
             <li>Mis Proyectos</li>

@@ -12,7 +12,7 @@ const SeeButton = styled.button`
     align-items: center;
     gap: 10px;
     font-size: 0.9rem;
-
+    transition: 0.15s ease;
     &:hover{
         background-color: var(--purple-color);
         color: var(--white-color);

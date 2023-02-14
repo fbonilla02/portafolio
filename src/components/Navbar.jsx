@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
  const NavBar = styled.header`
@@ -25,7 +26,7 @@ export default function Navbar() {
   return (
     <NavBar>
     <section>
-        <h2>FBONILLA</h2>
+        <h2><Link to='/'>FBONILLA</Link></h2>
     </section>
     <section>
         <figure>

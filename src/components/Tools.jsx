@@ -6,14 +6,10 @@ import docker from '../assets/icons8-docker.svg'
 import vscode from '../assets/icons8-visual-studio-code-2019.svg'
 import figma from '../assets/icons8-figma.svg'
 import notion from '../assets/icons8-notion.svg'
+import { CardContainer } from '../GlobalStyles'
 
 
-const CardContainer = styled.section`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
 
-`
 const CardDiv = styled.article`
     background-color: white;
     padding: 30px 30px;
